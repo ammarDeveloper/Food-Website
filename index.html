@@ -6,33 +6,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Online Food Websites</title>
+
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Chela+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width: 1215px)" href="css/phone.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <nav id="navbar">
         <div id="logo">
-            <img src="images/logo1.png" alt="MyOnlineMeal.com">
+            <img src="/images/logo.jpg" alt="MyOnlineMeal">
         </div>
+
         <ul>
-            <li class="item"><a href="#">Home</a></li>
-            <li class="item"><a href="#">Services</a></li>
-            <li class="item"><a href="#">About us</a></li>
-            <li class="item"><a href="#">Contact us</a></li>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#">About Us</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
         </ul>
     </nav>
 
-    <section class="home">
-        <div id="container">
-            <h1 class="h-primary">Welcome to MyOnlineMeal</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque voluptatem voluptatibus cum praesentium
-                suscipit quod, tempora voluptate blanditiis eligendi saepe iure, quibusdam libero in possimus necessitatibus
-                officia ipsa asperiores aliquid? Doloremque explicabo eligendi adipisci.</p>
-            <button class="btn">Order Now</button>
+    <sectoin id="home">
+        <h1 class="h-primary">Welcome to MyOnileMeal</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse illo rem unde at, Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. Mollitia, saepe?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit maiores,</p>
+        <button class="btn">Order Now</button>
+    </sectoin>
+<hr>
+    <section id="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="/images//pizza.jpg" alt="">
+                <h2 class="h-secondry center">Food Catering</h2>
+                <p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste explicabo corrupti porro excepturi.
+                    Esse blanditiis distinctio mollitia optio natus molestias quos nisi in velit sunt aperiam
+                    reiciendis, dolor minus omnis necessitatibus modi facere aut?Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem doloremque vero soluta illo dicta laborum tempore nam distinctio amet quos.</p>
+            </div>
+
+            <div class="box">
+                <img src="/images/food-ordering.png" alt="">
+                <h2 class="h-secondry center">Food Ordering</h2>
+                <p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste explicabo corrupti porro excepturi.
+                    Esse blanditiis distinctio mollitia optio natus molestias quos nisi in velit sunt aperiam
+                    reiciendis, dolor minus omnis necessitatibus modi facere aut?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat culpa provident, assumenda consequuntur cum reprehenderit iste molestias qui molestiae. Voluptas.</p>
+            </div>
+
+            <div class="box">
+                <img src="/images/bulk-ordering.jpg" alt="">
+                <h2 class="h-secondry center">Bulk Ordering</h2>
+                <p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste explicabo corrupti porro excepturi.
+                    Esse blanditiis distinctio mollitia optio natus molestias quos nisi in velit sunt aperiam
+                    reiciendis, dolor minus omnis necessitatibus modi facere aut?Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nemo error molestiae unde dicta quae! Itaque nihil recusandae voluptates laborum!</p>
+            </div>
         </div>
     </section>
+<hr>
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="/images/client.jpg" alt="">
+            </div>
+            <div class="client-item">
+                <img src="/images/skypesjpg.jpg" alt="">
+            </div>
+            <div class="client-item">
+                <img src="/images/client.jpg" alt="">
+            </div>
+            <div class="client-item">
+                <img src="/images/skypesjpg.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="phone" id="phone" placeholder="Enter Your Phone Number">
+                </div>
+                <div class="form-group">
+                    <label for="name">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div> 
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.myOnlineMeal.com. All right reserved!
+        </div>
+    </footer>
+
 </body>
 
 </html>

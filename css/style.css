@@ -1,73 +1,234 @@
-/* resting the css */
+/* Css Rest */
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
 }
 
-/* navigation bar */
+html{
+    scroll-behavior: smooth;
+}
+
+/* Css Variables */
+:root{
+    --navabar-height: 59px;
+}
+
+/* Navigation bar */
 #navbar {
+    position: sticky;
     display: flex;
-    background-color: rgb(139, 139, 139);
-    justify-items: center;
-    max-height: 63px;
+    align-items: center;
+    top: 0;
 }
 
-/* logo image */
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    top: 0px;
+    left: 0px;
+}
+
+/* Navigation bar: Logo and image */
+#logo{
+    margin: 10px 30px;
+}
+
 #logo img {
-    max-width: 40px;
-    max-height: 40px;
-    margin: 11px 20px;;
-    padding: 3px;
+    height: 65px;
+    margin: 3px 5px;
 }
 
-/* ul element */
+/* Navigation bar: list styling */
 #navbar ul {
     display: flex;
-    margin: 20px;
-    align-items: center;
-    justify-items: center;
-    list-style-type: none;
 }
 
-/* nav bar elements */
-#navbar ul li a {
-    text-decoration: none;
-    padding: 5px 10px;
-    margin: 10px;
-    color: black;
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
     border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Baloo Bhai 2', cursive;
 }
 
-/* hovering on the nav bar elements */
-#navbar ul li a:hover {
-    background-color: aliceblue;
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
 }
 
-/* section home */
-.home {
+/* Home section */
+#home {
     display: flex;
     flex-direction: column;
+    padding: 3px 200px;
+    height: 576px;
+    justify-content: center;
     align-items: center;
-    
-    max-height: 10px;
 }
 
-/* div container */
-#container {
+#home::before {
+    content: "";
+    position: absolute;
+    background: url(/images/back-ground.jpg) no-repeat center center/cover;
+    height: 678px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    top: 0px;
+    left: 0px;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Services section */
+#services{
+    margin: 80px;
     display: flex;
-    flex-direction: column;
+}
+
+#services .box{
+    border: 2px solid rgb(255, 0, 0);
+    padding: 34px;
+    margin: 3px;
+    border-radius: 35px;
+    background: #f0f0d6;
+}
+
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+}
+
+/* Client Section */
+#client-section{
+    position: relative;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    max-width: 954px;
-    max-height: 400;
 }
 
-/* heading 1 in container */
-#container h1 {
-    margin: 40px;
+.client-item {
+    padding: 34px;
 }
 
-/* Paragraph in container */
-#container p{
-    margin: 5px;
+#clients img{
+    height: 180px;
+}
+
+/* Contact section */
+#contact{
+    position: relative;  
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background-color: bisque;
+    width: 100%;
+    height: 657px;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.3rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* footer */
+
+footer
+{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* utiltity class */
+.h-primary {
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-secondry{
+    font-size: 1.6rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: bisque;
+    margin: 17px;
+    font-size: 1.8rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
 }
 
